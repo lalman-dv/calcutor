@@ -63,3 +63,30 @@ button:active {
 #clear-btn:active {
   background-color: hsl(19, 100%, 80%);
 }
+button {
+  touch-action: manipulation;
+}
+@media (max-width: 600px) {
+  .calculator {
+    max-width: 100%;
+    border-radius: 0;
+    height: 100vh;
+  }
+
+  #display {
+    font-size: 3rem;
+    padding: 15px;
+  }
+
+  #keys {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 15px;
+  }
+
+  button {
+    height: 60px;
+    width: 60px;
+    font-size: 1.5rem;
+  }
+}
